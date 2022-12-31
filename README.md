@@ -1,6 +1,6 @@
 # Publications related to Secure-Scuttlebutt and similar technologies.
 
-[*Implementing the Double Ratchet algorithm in Tremola, a Scuttlebutt based messaging app for Android*](./pdfs/Waldvogel-DoubleRatchet.pdf), [Lars Waldvogel](https://github.com/LarsWaldvogel/), Bachelor Thesis
+*Implementing the Double Ratchet algorithm in Tremola, a Scuttlebutt based messaging app for Android*, [Lars Waldvogel](https://github.com/LarsWaldvogel/), [Bachelor Thesis](./pdfs/Waldvogel-DoubleRatchet.pdf)
 
 Keywords: Cryptography, Double-Ratchet, Secure Messaging
 
