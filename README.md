@@ -27,7 +27,7 @@ Keywords: Cryptography, Double-Ratchet, Secure Messaging
 ````
 </details>
 
-*Decentralized Kanban board using Secure Scuttlebutt and Conflict-Free Replicated Data Types*, Jannick Heisch ([University of Basel](https://dmi.unibas.ch/en/persons/heisch-jannick/),  [Bachelor Thesis](./pdfs/Heisch-Kanban.pdf)
+*Decentralized Kanban board using Secure Scuttlebutt and Conflict-Free Replicated Data Types*, Jannick Heisch ([University of Basel](https://dmi.unibas.ch/en/persons/heisch-jannick/)),  [Bachelor Thesis](./pdfs/Heisch-Kanban.pdf)
 
 Keywords: CRDT, Applications, Scuttlesort
 
@@ -54,7 +54,7 @@ Keywords: CRDT, Applications, Scuttlesort
 ````
 </details>
 
-*Memory-Bounded Replication of Mutable Data Structures over Immutable Append-Only Logs*, Sebastian Lukas Philipp [Master Thesis](./pdfs/Philipp-Memory-Bounded.pdf)
+*Memory-Bounded Replication of Mutable Data Structures over Immutable Append-Only Logs*, Sebastian Lukas Philipp, [Master Thesis](./pdfs/Philipp-Memory-Bounded.pdf)
 
 Keywords: Memory optimization, Garbage Collection, Data structures
 
