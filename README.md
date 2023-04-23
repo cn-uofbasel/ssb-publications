@@ -1,6 +1,6 @@
 # Publications related to Secure-Scuttlebutt and similar technologies.
 
-*Implementing the Double Ratchet algorithm in Tremola, a Scuttlebutt based messaging app for Android*, Lars Waldvogel ([GitHub](https://github.com/LarsWaldvogel/), [LinkedIn](https://ch.linkedin.com/in/lars-waldvogel)), [Bachelor Thesis](./pdfs/Waldvogel-DoubleRatchet.pdf)
+## *Implementing the Double Ratchet algorithm in Tremola, a Scuttlebutt based messaging app for Android*, Lars Waldvogel ([GitHub](https://github.com/LarsWaldvogel/), [LinkedIn](https://ch.linkedin.com/in/lars-waldvogel)), [Bachelor Thesis](./pdfs/Waldvogel-DoubleRatchet.pdf)
 
 Keywords: Cryptography, Double-Ratchet, Secure Messaging
 
@@ -29,7 +29,7 @@ Keywords: Cryptography, Double-Ratchet, Secure Messaging
 
 ---------
 
-*Decentralized Kanban board using Secure Scuttlebutt and Conflict-Free Replicated Data Types*, Jannick Heisch ([University of Basel](https://dmi.unibas.ch/en/persons/heisch-jannick/)),  [Bachelor Thesis](./pdfs/Heisch-Kanban.pdf)
+## *Decentralized Kanban board using Secure Scuttlebutt and Conflict-Free Replicated Data Types*, Jannick Heisch ([University of Basel](https://dmi.unibas.ch/en/persons/heisch-jannick/)),  [Bachelor Thesis](./pdfs/Heisch-Kanban.pdf)
 
 Keywords: CRDT, Applications, Scuttlesort
 
@@ -58,7 +58,7 @@ Keywords: CRDT, Applications, Scuttlesort
 
 ---------
 
-*Memory-Bounded Replication of Mutable Data Structures over Immutable Append-Only Logs*, Sebastian Lukas Philipp, [Master Thesis](./pdfs/Philipp-Memory-Bounded.pdf)
+## *Memory-Bounded Replication of Mutable Data Structures over Immutable Append-Only Logs*, Sebastian Lukas Philipp, [Master Thesis](./pdfs/Philipp-Memory-Bounded.pdf)
 
 Keywords: Memory optimization, Garbage Collection, Data structures
 
