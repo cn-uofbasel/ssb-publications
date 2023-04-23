@@ -27,6 +27,8 @@ Keywords: Cryptography, Double-Ratchet, Secure Messaging
 ````
 </details>
 
+---------
+
 *Decentralized Kanban board using Secure Scuttlebutt and Conflict-Free Replicated Data Types*, Jannick Heisch ([University of Basel](https://dmi.unibas.ch/en/persons/heisch-jannick/)),  [Bachelor Thesis](./pdfs/Heisch-Kanban.pdf)
 
 Keywords: CRDT, Applications, Scuttlesort
@@ -54,6 +56,8 @@ Keywords: CRDT, Applications, Scuttlesort
 ````
 </details>
 
+---------
+
 *Memory-Bounded Replication of Mutable Data Structures over Immutable Append-Only Logs*, Sebastian Lukas Philipp, [Master Thesis](./pdfs/Philipp-Memory-Bounded.pdf)
 
 Keywords: Memory optimization, Garbage Collection, Data structures
@@ -62,8 +66,11 @@ Keywords: Memory optimization, Garbage Collection, Data structures
 <summary>Abstract</summary>
 
 > Append-only logs are data structures which permit random-access read operations, but write operations are limited to appending to the end of the log. Nevertheless, arbitrarily modifications of data can be represented by creating an ever-growing stream of update operations appended to such a log. However, if a new consumer of this update stream wishes to recover the state represented by the log, often the entire log must be kept in storage and be replicated again.
+>
 > In this thesis report, we present PREDSL, a framework which facilitates the implementation of data structures by producing such a sequence of modification operations, and provide implementations for commonly used data structures.
+>
 > Further on, we designed, implemented and evaluated different strategies by which only a small, contiguous portion of the log – a “sliding window” of the log’s latest entries – must be kept in storage and replicated to new consumers.
+>
 > The results of our evaluation show that these strategies indeed manage to maintain a small sliding window in which all information relevant to reconstruct the entire state of the encoded data structure is represented in a very compact form, rather than spread over the entire log.
   
 </details>
