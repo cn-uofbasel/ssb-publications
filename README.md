@@ -6,13 +6,14 @@ Keywords: state-based CRDT, Ledgers, security
 
 <details>
 <summary>Abstract</summary>
-</details>
+
 
 > Conventional blockchains use consensus algorithms that totally order updates across all accounts, which is stronger than necessary to implement a replicated ledger. This makes updates slower and more expensive than necessary. More recent consensus-free replicated ledgers forego consensus algorithms, with significant increase in performance and decrease in infrastructure costs. However, current designs are based around reliable broadcast of update operations to all replicas which require reliable message delivery and reasoning over operation histories to establish convergence and safety.
 >
 >In this paper, we present a replicated ledger as a state-based conflict-free replicated data type (CRDT) based on grow-only counters. This design provides two major benefits: 1) it requires a weaker eventual transitive delivery of the latest state rather than reliable broadcast of all update operations to all replicas; 2) eventual convergence and safety properties can be proven easily without having to reason over operation histories: convergence comes from the composition of grow-only counters, themselves CRDTs, and safety properties can be expressed over the state of counters, locally and globally. In addition, applications that tolerate temporary negative balances require no additional mechanisms and applications that require strictly non-negative balances can be supported by enforcing sequential updates to the same account across replicas.
 >
 >Our design is sufficient when executing on replicas that might crash and recover, as common in deployments in which all replicas are managed by trusted entities. It may also provide a good foundation to explore new mechanisms for tolerating adversarial replicas.
+</details>
 
 <details>
 <summary>BibTex Citation</summary>
