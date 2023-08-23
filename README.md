@@ -1,5 +1,35 @@
 # Publications related to Secure-Scuttlebutt and similar technologies.
 
+
+## *tinyISP: A Tunneling Negotiation and Feed Bundling Protocol Based on Secure Scuttlebutt*, Jannick Heisch ([University of Basel](https://dmi.unibas.ch/en/persons/heisch-jannick/)),  [Master Project](./pdfs/Heisch-tinyISP.pdf)
+
+Keywords: Append-Only Logs, Multiplexing, Tunneling 
+
+<details>
+<summary>Abstract</summary>
+
+>Today, almost all everyday applications rely on the Internet to collaborate and exchange information with others. The data is usually stored on central servers owned by large, indi- vidual companies. Furthermore, users who do not have access to the Internet infrastructure are excluded from using these applications. Decentralized protocols such as the Secure Scut- tlebutt protocol offer an alternative. With this protocol, individual messages are replicated between participants using append-only logs. In cases where peer-to-peer connections are not available for data exchange, Pub servers are used. However, these servers are not selec- tive and replicate all feeds of all clients, which can lead to scalability issues over time as the number of participants and published messages increases continuously.
+>
+>Therefore, this project introduces the feed bundling and tunneling protocol called tinyISP, which allows clients to enter into a contract with an ISP that enables them to exchange data with other clients of the same ISP. The data from multiple feeds is bundled into one log and sent via the ISP to the receiving client, who then demultiplexes the data and as- signs it to the corresponding feeds, reducing overhead in the replication layer. Once the contract between the ISP and the client is terminated, the feeds used for communication can be deleted to free up resources. Since the entire coordination of the protocol is based on append-only logs, it is independent of the Internet and can be transmitted through other media. A prototype implementation of tinyISP was integrated into existing Secure Scuttle- butt applications to demonstrate the benefits of such a protocol for everyday applications, such as a chat application.
+</details>
+
+<details>
+<summary>BibTex Citation</summary>
+
+````
+@mastersthesis { 
+  heisch2023tinyisp, 
+  author = {Jannick Heisch}, 
+  title = {{tinyISP: A Tunneling Negotiation and Feed Bundling Protocol Based on Secure Scuttlebutt}}, 
+  school = {University of Basel}, 
+  year = {2022},
+  type={Master Project}
+ } 
+````
+</details>
+
+---------
+
 ## *2P-BFT-Log*: 2-Phase Single-Author Append-Only Log for Adversarial Environments, Erick Lavoie, [Arxiv Pre-Print Paper](https://arxiv.org/abs/2307.08381)
 
 Keywords: state-based CRDT, append-only log, security
