@@ -1,5 +1,32 @@
 # Publications related to Secure-Scuttlebutt and similar technologies.
 
+## *Delta-GOC-Ledger: Incremental Checkpointing and Lower Message Sizes for Grow-Only Counters Ledgers with Delta-CRDTs*, Jannick Heisch ([University of Basel](https://dmi.unibas.ch/en/persons/heisch-jannick/)),  [Master Thesis](./pdfs/Heisch-Delta-GOC-Ledger.pdf)
+
+Keywords: Append-Only Logs, Eventually-Consistent Ledger, CRDTs, Delta-CRDTs 
+
+<details>
+<summary>Abstract</summary>
+
+>The Grow-Only-Counters-Ledger (GOC-Ledger) is a novel consensus-free replicated ledger based on a state-based Conflict-free Replicated Data Type (CRDT). It enables local crypto-tokens that impose lower infrastructure costs for low-volume intra-community transactions than existing blockchain projects. CRDTs ensure that all replicas in the system eventually end up in a consistent state. In order to achieve eventual consistency in state-based CRDTs, the replicas must periodically exchange their entire state. In the GOC-Ledger, the size of full states is unbounded and can become large depending on the number of transactions and accounts. Operation-based CRDTs only transfer operations in their update messages, leading to smaller message sizes, but require a reliable communication channel. Therefore, δ-based CRDTs have been proposed that unite the advantages of both approaches, by relying on the replication of small-states, while guaranteeing correct convergence on unreliable communication channels.
+>
+This thesis presents the δ-GOC-Ledger, a δ-based version of the existing state-based GOC-Ledger to reduce the communication overhead and increase scalability while still sup- porting unreliable communication channels. We prove the correctness and convergence of our design and formally show the relation to the state-based approach. A prototype based on Git is presented and demonstrates the implementation of CRDTs with Git. We assess both state-based and δ-based versions of the GOC-Ledger by simulating ERC-20 token transactions to quantify the reduction in message size that can be expected on real-world transactions and to evaluate the suitability of Git as a platform for implementing CRDTs.
+We provide formal convergence proofs highlighting that the current state of the δ-based ledger can be incrementally computed. This is achieved by exploiting the associativity of the merge operation, which allows us to merge the latest full state with more recent delta states in any order. This approach enables efficient incremental computation of states from a causal history, as represented in a Git commit graph. Our analysis reveals that Git is quite effective at optimizing the size of state-based CRDT messages by already achieving an average size reduction of 24% compared to a naive approach. Nonetheless, implementing an application-specific δ-CRDT reduces the message size during incremental reconciliation by an additional 10-30%. Based on our results, we identify the overhead associated with the data representation using Git tree objects and highlight additional possibilities to further optimize the communication overhead.
+</details>
+
+<details>
+<summary>BibTex Citation</summary>
+
+````
+@mastersthesis { 
+  heisch2024deltagocledger, 
+  author = {Jannick Heisch}, 
+  title = {{Delta-GOC-Ledger: Incremental Checkpointing and Lower Message Sizes for Grow-Only Counters Ledgers with Delta-CRDTs}}, 
+  school = {University of Basel}, 
+  year = {2024},
+  type={Master Thesis}
+ } 
+````
+</details>
 
 ## *tinyISP: A Tunneling Negotiation and Feed Bundling Protocol Based on Secure Scuttlebutt*, Jannick Heisch ([University of Basel](https://dmi.unibas.ch/en/persons/heisch-jannick/)),  [Master Project](./pdfs/Heisch-tinyISP.pdf)
 
@@ -22,7 +49,7 @@ Keywords: Append-Only Logs, Multiplexing, Tunneling
   author = {Jannick Heisch}, 
   title = {{tinyISP: A Tunneling Negotiation and Feed Bundling Protocol Based on Secure Scuttlebutt}}, 
   school = {University of Basel}, 
-  year = {2022},
+  year = {2023},
   type={Master Project}
  } 
 ````
